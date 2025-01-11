@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body> <!-- content starts here -->
+    <h2>HTML form</h2>
+    <form action="formsaved.html"> <!--saving details at backend-->
+        <div> <!--used for next line-->
+           <!-- by giving "label" and "input" clicking on :First Name: will select input box  -->
+            <label for="fn">First Name:</label> <!-- for & id attrtibutes vales must be same as they are linked together -->
+            <input type="text" id="fn" name="firstname"> <!--"name" is used for backed searching.. -->
+        </div><br> <!-- An extra br -->
+        <div>
+            <label for="ln">Last Name:</label>
+            <input type="text" id="ln" name="lastname">
+        </div> <hr>
+            <!-- Simple type of form strarts here :-->
+        <div>
+            First Name: <input type="text" placeholder="Your First Name"><br><br> <!-- double br used-->
+            Last Name: <input type="text" placeholder="Your Last Name"><br><br>
+        </div>
+        <div>
+             Date:<input type="date" name="mydate" placeholder="a">
+        </div><br>
+        <div>
+            Bonus:<input type="number" name="mynumber" placeholder="Enter Your bonus"> <!--"e" alphabet can be use to tell 10 to the power-->
+        </div><br>
+        <div>
+            are u eligible?? <input type="checkbox" placeholder="a">     <!-- checkeddd -->
+        </div><br>
+        <div>
+            are u alive?! <input type="checkbox" name="chx" checked placeholder="a">
+        </div><br>
+        <div>
+            gender: Male<input type="radio" name="mygender" placeholder="a"> female <input type="radio" name="mygender" placeholder="a">
+        </div><br>
+        <div>
+            Feedback: <br> <textarea name="mytext" cols="30" rows="10" placeholder="Enter Text"></textarea>
+        </div><br>
+        <div>
+            <label for="car"> Car:</label>
+                <select name="mycar" id="car">
+                    <option value="alto" selected>ALTO</option> <!--selected-->
+                    <option value="desire">DESIRE</option>
+                    <option value="xuv">XUV</option>
+                </select>
+        </div><br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="clear">
+        </div><hr>
+    </form>
+    <h2>HTML Entities</h2>
+        <!-- [.cont+enter] = <div class="cont"> -->
+            <div class="cont">
+                <p>A para</p>
+            </div>
+            <div class="cont">
+                <p> 
+                    another &nbsp;&nbsp;&nbsp; para <br> <!--"&nbsp;" to provide nonbreakable space-->
+                    "<" = &lt; <br> 
+                    ">" = &gt; <br> <!--"&lt;" & "&gt;" to write "<" and ">" respectively-->
+                    <!--special symbols-->
+                    pound: &pound; <br>
+                    dollar: &dollar; <br>
+                    euro: &euro; <br>
+                    copyright: &copy;
+                </p>
+            </div>
+    
+            <!-- #Shortcut learned 
+            1. select area then: alt + up\down: = selected area moves up or down 
+            2. shift + up\down = selects area up or down 
+            3. right click << format document 
+            4. ctrl+/ = comment out a line    -->
+    </body>
+    
+</html>
