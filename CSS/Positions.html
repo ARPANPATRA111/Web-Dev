@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #r {
+            background-color: rgb(157, 238, 157);
+            font-size: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        #container {
+            border: 4px dotted blue;
+            background-color: khaki;
+            height: 1300px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            margin: 4px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #box1 {
+            /*Css positions: static(default) , absolute , relative , fixed , sticky */
+            position: absolute;
+            top: 90px;
+            left:60px;  
+        }
+
+        #box2 {
+            position: sticky;
+            top: 20px;
+        }
+
+        #box3{
+            position:relative;
+            top: 40px;
+            left: 50px;
+        }
+
+        #box4{
+            position: fixed;   
+            top: 200px;
+            right:15px;
+        }
+    </style>
+</head>
+<body>    
+    <h1 id="r">Css Positions</h1>
+    <div id="container">
+        <div class="box" id="box1"> 1..</div>
+        <div class="box" id="box2">2..</div>
+        <div class="box" id="box3">3..</div>
+        <div class="box" id="box4">4..</div>
+    </div>
+    
+</body>
+</html>
