@@ -50,6 +50,30 @@
             top: 200px;
             right:15px;
         }
+
+        #gtr {
+            /* header is a block element so we can set its width */
+            width: 80%;
+            /* U can comment out width and margin */
+            font-size: 90px;
+            border: 2px solid red;
+            margin: auto;
+            /*[gives equal margine on both the sides]*/
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(17, 180, 52);
+            text-align: center;
+            /* display: inline;  /* [Its used to make element appear inline] */
+        }
+
+        img {
+            width: 500px;
+            height: 350px;
+            margin: auto;
+            /*[gives equal margine on both the sides]*/
+            display: block;
+            /* [Its used to make element appear block] */
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>    
@@ -60,6 +84,10 @@
         <div class="box" id="box3">3..</div>
         <div class="box" id="box4">4..</div>
     </div>
+
+    <header id="gtr"> Css Display Property
+        <img src="../HTML/SoloLeveling.jpg" alt="loading....">
+    </header>
     
 </body>
 </html>
