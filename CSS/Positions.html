@@ -74,6 +74,61 @@
             /* [Its used to make element appear block] */
             box-sizing: border-box;
         }
+
+        .contain {
+            margin: auto;
+            width: 1236px;
+            box-sizing: border-box;
+        }
+
+        .ll {
+            border: 5px solid rgb(151, 43, 142);
+            background-color: rgb(241, 174, 227);
+            margin: 4px 0px;
+            padding: 10px;
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+        }
+
+        .nevbar {
+            background-color: rgb(77, 73, 73);
+            border-radius: 30px;
+        }
+
+        .nevbar ul {
+            overflow: auto;
+        }
+
+        .nevbar li {
+            float: left;
+            list-style: none;
+            /* [removing bullets] */
+            margin: 32px 30px;
+        }
+
+        .nevbar li a {
+            padding: 3px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .nevbar li a:hover {
+            color: tomato;
+        }
+
+        .search {
+            float: right;
+            padding: 29px 45px;
+            color: aliceblue;
+        }
+
+        .nevbar input {
+            border: 2px solid black;
+            border-radius: 13px;
+            padding: 3px 18px;
+            width: 200px;
+        }
     </style>
 </head>
 <body>    
@@ -88,6 +143,62 @@
     <header id="gtr"> Css Display Property
         <img src="../HTML/SoloLeveling.jpg" alt="loading....">
     </header>
+
+    <div class="contain">
+        <div class="ll">special case
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusamus veritatis sint porro mollitia
+                libero explicabo sit, ut recusandae reprehenderit. Vero, quaerat animi. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quae soluta quam unde ex, illum laudantium temporibus a quaerat,
+                repellendus earum laboriosam ut architecto libero tempore, non aperiam amet culpa? Officia?Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Voluptas soluta quisquam exercitationem tempora corrupti.
+                Voluptatibus et non distinctio, minus reprehenderit voluptate quidem. Dolor, corporis maxime odio
+                consequatur facilis deleniti et!
+            </p>
+        </div>
+
+        <div class="ll">special case
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusamus veritatis sint porro mollitia
+                libero explicabo sit, ut recusandae reprehenderit. Vero, quaerat animi. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quae soluta quam unde ex, illum laudantium temporibus a quaerat,
+                repellendus earum laboriosam ut architecto libero tempore, non aperiam amet culpa? Officia?Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Voluptas soluta quisquam exercitationem tempora corrupti.
+                Voluptatibus et non distinctio, minus reprehenderit voluptate quidem. Dolor, corporis maxime odio
+                consequatur facilis deleniti et!
+            </p>
+        </div>
+
+        <div class="ll">special case
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusamus veritatis sint porro mollitia
+                libero explicabo sit, ut recusandae reprehenderit. Vero, quaerat animi. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quae soluta quam unde ex, illum laudantium temporibus a quaerat,
+                repellendus earum laboriosam ut architecto libero tempore, non aperiam amet culpa? Officia?Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Voluptas soluta quisquam exercitationem tempora corrupti.
+                Voluptatibus et non distinctio, minus reprehenderit voluptate quidem. Dolor, corporis maxime odio
+                consequatur facilis deleniti et!
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1> Navigation bar</h1>
+    <header>
+        <nav class="nevbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+
     
 </body>
 </html>
