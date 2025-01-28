@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +32,7 @@
             /*Css positions: static(default) , absolute , relative , fixed , sticky */
             position: absolute;
             top: 90px;
-            left:60px;  
+            left: 60px;
         }
 
         #box2 {
@@ -39,16 +40,16 @@
             top: 20px;
         }
 
-        #box3{
-            position:relative;
+        #box3 {
+            position: relative;
             top: 40px;
             left: 50px;
         }
 
-        #box4{
-            position: fixed;   
+        #box4 {
+            position: fixed;
             top: 200px;
-            right:15px;
+            right: 15px;
         }
 
         #gtr {
@@ -129,9 +130,50 @@
             padding: 3px 18px;
             width: 200px;
         }
+
+        /* Styling and pseudo class Css */
+
+        .ctr {
+            border: 2px solid green;
+            background-color: rgb(255, 251, 36);
+            padding: 15px;
+            margin: 12px auto;
+            width: 666px;
+        }
+
+        a {
+            text-decoration: none; /* [Removes underline from links] */
+            color: black;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:visited {
+            background-color: blue;
+            color: rgb(15, 15, 14);
+        }
+
+        a:active {
+            background-color: blueviolet;
+        }
+
+        .btn {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-weight: bold;
+            background-color: rgba(245, 182, 10, 0.938);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 5px;
+
+        }
     </style>
 </head>
-<body>    
+
+<body>
     <h1 id="r">Css Positions</h1>
     <div id="container">
         <div class="box" id="box1"> 1..</div>
@@ -199,6 +241,18 @@
     <hr>
 
 
-    
+    <h1 id="rm">Pseudo selectors and stylimg links</h1>
+    <div id="cnt" class="ctr">
+        <h3>this is my heading
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non architecto accusamus dolor ea saepe sunt
+                quidem vel eaque facere odit est aliquam veritatis, suscipit eius eligendi expedita doloremque sequi
+                veniam iusto magni possimus ab molestiae. Accusantium iure assumenda magni quos!
+            </p>
+            <a href="#" class="btn">REad more..</a>
+            <button class="btn">Contact us</button>
+        </h3>
+    </div>
+
 </body>
+
 </html>
