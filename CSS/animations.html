@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Advanced Animations</title>
     <style>
-        /* Transition Properties */
+        /* Previous styles... */
         .transition-demo {
             width: 100px;
             height: 100px;
             background-color: blue;
-            transition: all 0.5s ease; /* Smooth transition for all properties */
+            transition: all 0.5s ease;
             margin: 20px;
         }
         .transition-demo:hover {
@@ -20,7 +20,6 @@
             transform: rotate(45deg);
         }
 
-        /* Keyframe Animation */
         @keyframes move-rotate {
             0% { transform: translateX(0) rotate(0deg); }
             50% { transform: translateX(200px) rotate(180deg); }
@@ -34,7 +33,6 @@
             margin: 20px;
         }
 
-        /* Multiple Animations */
         @keyframes color-change {
             0% { background-color: purple; }
             50% { background-color: orange; }
@@ -49,7 +47,6 @@
             margin: 20px;
         }
 
-        /* Hover Animation */
         .hover-animation {
             width: 100px;
             height: 100px;
@@ -61,16 +58,71 @@
             opacity: 0.7;
         }
 
-        /* Container for demos */
         .container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
         }
 
-        .h1{
+        .h1 {
             text-align: center;
             font-size: 50px;
+        }
+
+        /* New Animations */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+        .bounce-element {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6b6b;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes spin-color {
+            0% { transform: rotate(0deg); background-color: #3498db; }
+            50% { transform: rotate(180deg); background-color: #e74c3c; }
+            100% { transform: rotate(360deg); background-color: #2ecc71; }
+        }
+        .spin-color-element {
+            width: 120px;
+            height: 120px;
+            background-color: #3498db;
+            animation: spin-color 3s infinite linear;
+        }
+
+        @keyframes wave-motion {
+            0% { border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; }
+            50% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+            100% { border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; }
+        }
+        .wave-motion-element {
+            width: 150px;
+            height: 150px;
+            background-color: #9b59b6;
+            animation: wave-motion 2s infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { 
+                box-shadow: 0 0 5px #2c3e50, 
+                            0 0 10px #2c3e50, 
+                            0 0 15px #2c3e50; 
+            }
+            50% { 
+                box-shadow: 0 0 20px #2c3e50, 
+                            0 0 30px #2c3e50, 
+                            0 0 40px #2c3e50; 
+            }
+        }
+        .pulse-glow-element {
+            width: 100px;
+            height: 100px;
+            background-color: #34495e;
+            animation: pulse-glow 2s infinite alternate;
         }
     </style>
 </head>
@@ -81,6 +133,13 @@
         <div class="animation-demo"></div>
         <div class="multi-animation"></div>
         <div class="hover-animation"></div>
+    </div>
+    <h1 class="h1">More animations</h1>
+    <div class="container">
+        <div class="bounce-element"></div>
+        <div class="spin-color-element"></div>
+        <div class="wave-motion-element"></div>
+        <div class="pulse-glow-element"></div>
     </div>
 </body>
 </html>
