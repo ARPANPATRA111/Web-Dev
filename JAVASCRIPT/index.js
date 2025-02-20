@@ -1,6 +1,3 @@
-// Basic Calculator Demo
-// Try modifying these values and running the code!
-
 // Variables with different data types
 /* Use let when value needs to change and const when value is fixed */
 const a = 99; 
@@ -41,3 +38,16 @@ console.log("\nArrays and Objects:");
 console.log("First score:", scores[0]);
 person.age += 1;
 console.log("Person's age:", person.age);
+
+// Looping through an array
+console.log("\nLooping through an Array:");
+for (let i = 0; i < scores.length; i++) {
+    console.log(`Score ${i + 1}: ${scores[i]}`);
+}
+
+// Looping through an object
+console.log("\nLooping through an Object:");
+for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
+}
+
